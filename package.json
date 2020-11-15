@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-docker-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:image": "docker build -t ziadsv/my-node-playground .",
+    "run:image": "docker run -it -p 3000:3000 ziadsv/my-node-playground",
+    "docker:push": "docker push ziadsv/my-node-playground"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalharash/nodejs-docker-starter.git"
+  },
+  "author": "Ziad Alharash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zalharash/nodejs-docker-starter/issues"
+  },
+  "homepage": "https://github.com/zalharash/nodejs-docker-starter#readme",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
